@@ -1,0 +1,31 @@
+*{margin: 0;
+padding:0%;
+box-sizing: border-box}
+
+body{text-align: center;margin-top: 5%;}
+
+#football {
+    animation: ball 0.5s ease-out infinite alternate}
+
+#pleg1 {
+    animation: kick 0.5s ease-out infinite alternate;
+}
+
+@keyframes ball {
+    from{
+    transform: translate(0%); 
+    
+    }
+    halfway {transform: translate(50px, -50px);}
+            
+    to{    
+    transform: translate(170px, -100px);
+    
+    }
+}
+@keyframes kick {
+    from {transform: rotateZ(0deg);}
+    to {transform:rotateZ(-5deg)}
+    
+    
+}
