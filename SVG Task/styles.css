@@ -5,11 +5,42 @@ box-sizing: border-box}
 body{text-align: center;margin-top: 5%;}
 
 #football {
-    animation: ball 0.5s ease-out infinite alternate}
+    animation: ball 0.5s 1 ease-out  alternate ; animation-delay: 3s;}
 
 #pleg1 {
-    animation: kick 0.5s ease-out infinite alternate;
+    animation: kick 0.5s 1 ease-out alternate ;animation-delay: 3s;
 }
+
+#rightpupil {
+    animation: eye 0.5s 1 ease-out  alternate ; animation-delay: 3s;
+}
+
+#leftpupil {
+    animation: eye 0.5s 1 ease-out alternate ;animation-delay: 3s;}
+
+#rupperlid {
+    animation: upperblink 0.75s 2 ease-in 
+}
+#lupperlid {
+    animation: upperblink 0.75s 2 ease-in}
+
+#rlowerlid {
+    animation: lowerblink 0.75s 2 ease-in}
+
+#llowerlid {
+    animation: lowerblink 0.75s 2 ease-in}
+
+@keyframes upperblink {
+    from {transform: translate(0%);}
+    to {transform: translateY(10px);}
+    
+}
+@keyframes lowerblink {
+    from {transform: translate(0%);}
+    to {transform: translateY(-10px);}
+    
+}
+
 
 @keyframes ball {
     from{
@@ -27,5 +58,10 @@ body{text-align: center;margin-top: 5%;}
     from {transform: rotateZ(0deg);}
     to {transform:rotateZ(-5deg)}
     
+}
+
+@keyframes eye {
+    from {transform:translate(0%) ;}
+    to {transform:translateX(15px)}
     
 }
